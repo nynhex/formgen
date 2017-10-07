@@ -1,6 +1,6 @@
 require 'csv'
 
-list = CSV.read('items.csv')
+list = CSV.read(ARGV)
 
 list.each do |item|
   puts "<%= f.label :#{item}, class: 'form-label' %>"
